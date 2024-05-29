@@ -1,5 +1,5 @@
 """
-WSGI config for lab3 project.
+WSGI config for online_shop project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -8,9 +8,8 @@ https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
 """
 
 import os
-
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "lab3.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "online_shop.settings")
 
 application = get_wsgi_application()
