@@ -7,14 +7,12 @@ def test_product_create():
         name="Test Product",
         description="Test Description",
         price=99.99,
-        image="products/test.jpg",
         rating=5,
         specifications="Test Specifications"
     )
     assert product.name == "Test Product"
     assert product.description == "Test Description"
     assert product.price == 99.99
-    assert product.image == "products/test.jpg"
     assert product.rating == 5
     assert product.specifications == "Test Specifications"
 
@@ -29,7 +27,6 @@ def test_cart_item_creation():
         name="Test Product",
         description="Test Description",
         price=99.99,
-        image="products/test.jpg",
         rating=5,
         specifications="Test Specifications"
     )
