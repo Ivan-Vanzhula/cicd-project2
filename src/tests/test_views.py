@@ -14,11 +14,6 @@ def product():
         image="products/test.jpg"
     )
 
-def add_session_to_request(request):
-    middleware = SessionMiddleware(lambda x: None)
-    middleware.process_request(request)
-    request.session.save()
-
 @pytest.mark.django_db
 def test_index_view(client):
     url = reverse('index')
