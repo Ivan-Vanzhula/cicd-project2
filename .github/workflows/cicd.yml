@@ -37,7 +37,7 @@ jobs:
 
     - name: Run tests with Pytest
       run: |
-        python src/manage.py test online_shop.mvc.tests.test_models
-        python src/manage.py test online_shop.mvc.tests.test_views
+        python src/manage.py test src.tests.test_models
+        python src/manage.py test src.tests.test_views
         
         

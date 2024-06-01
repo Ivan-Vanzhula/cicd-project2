@@ -1,5 +1,5 @@
 import pytest
-from online_shop.mvc.models import *
+from src.online_shop.mvc.models import *
 
 @pytest.mark.django_db
 def test_product_create():

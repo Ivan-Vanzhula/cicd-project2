@@ -3,7 +3,7 @@ import pytest
 from django.urls import reverse
 from django.contrib.sessions.middleware import SessionMiddleware
 from django.http import HttpRequest
-from online_shop.mvc.models import Product, Cart, CartItem
+from src.online_shop.mvc.models import Product, Cart, CartItem
 
 @pytest.fixture
 def product():
