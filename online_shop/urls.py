@@ -19,7 +19,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from mvc.views.views import *  # Adjusted import statement
+from shop.views import *  # Adjusted import statement
 from django.conf import settings
 from django.conf.urls.static import static
 

@@ -454,7 +454,7 @@
 
 		if (this.settings.autoWidth && !this.is('pre-loading')) {
 			var imgs, nestedSelector, width;
-			imgs = this.$element.find('img');
+			imgs = this.$element.find('images');
 			nestedSelector = this.settings.nestedItemSelector ? '.' + this.settings.nestedItemSelector : undefined;
 			width = this.$element.children(nestedSelector).width();
 
@@ -1904,7 +1904,7 @@
 
 			this._core.trigger('load', { element: $element, url: url }, 'lazy');
 
-			if ($element.is('img')) {
+			if ($element.is('images')) {
 				$element.one('load.owl.lazy', $.proxy(function() {
 					$element.css('opacity', 1);
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
@@ -2215,7 +2215,7 @@
 			icon,
 			path,
 			dimensions = video.width && video.height ? 'style="width:' + video.width + 'px;height:' + video.height + 'px;"' : '',
-			customTn = target.find('img'),
+			customTn = target.find('images'),
 			srcType = 'src',
 			lazyClass = '',
 			settings = this._core.settings,
@@ -2247,7 +2247,7 @@
 		}
 
 		if (video.type === 'youtube') {
-			path = "//img.youtube.com/vi/" + video.id + "/hqdefault.jpg";
+			path = "//images.youtube.com/vi/" + video.id + "/hqdefault.jpg";
 			create(path);
 		} else if (video.type === 'vimeo') {
 			$.ajax({
