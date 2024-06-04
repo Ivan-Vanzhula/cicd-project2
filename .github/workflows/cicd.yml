@@ -44,18 +44,3 @@ jobs:
         python manage.py test shop.tests.test_models
         python manage.py test shop.tests.test_views
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Deploy to Heroku
-      uses: akhileshns/heroku-deploy@v3.12.12
-      with:
-        heroku_api_key: ${{ secrets.HEROKU_KEY }}
-        heroku_app_name: "cicd-onlineshop"
-        heroku_email: "ivan.vanzula@knu.ua"
-        buildpack: "heroku/python"
