@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     // Product detail
     $('.product-links-wap a').click(function(){
-      var this_src = $(this).children('images').attr('src');
+      var this_src = $(this).children('img').attr('src');
       $('#product-detail').attr('src',this_src);
       return false;
     });

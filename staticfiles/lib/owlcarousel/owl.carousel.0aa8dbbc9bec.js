@@ -1372,7 +1372,7 @@
 	};
 
 	/**
-	 * Preloads images with auto width.
+	 * Preloads img with auto width.
 	 * @todo Replace by a more generic approach
 	 * @protected
 	 */
@@ -2247,7 +2247,7 @@
 		}
 
 		if (video.type === 'youtube') {
-			path = "//images.youtube.com/vi/" + video.id + "/hqdefault.jpg";
+			path = "//img.youtube.com/vi/" + video.id + "/hqdefault.jpg";
 			create(path);
 		} else if (video.type === 'vimeo') {
 			$.ajax({
